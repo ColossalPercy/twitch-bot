@@ -12,4 +12,8 @@ client.connect().then(() => {
 
 client.on('privmsg', data => {
   console.log(data)
+  if (data.msg.startsWith('!')) {
+    let command = data.msg.slice(1, data.msg.indexOf(' ') > 0 ? data.msg.indexOf(' ') : data.msg.length)
+    console.log(command)
+  }
 })
