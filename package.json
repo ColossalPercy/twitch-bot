@@ -4,7 +4,7 @@
   "description": "Bot for Twitch.tv",
   "main": "index.js",
   "scripts": {
-    "bot": "node index.js"
+    "start": "node index.js"
   },
   "keywords": [
     "twitch",
